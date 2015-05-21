@@ -7,13 +7,8 @@ restClient.registerMethod('getFromFacebook', 'http://graph.facebook.com/44', 'GE
 restClient.registerMethod('getFromWeather', 'http://api.openweathermap.org/data/2.5/weather?q=London,uk', 'GET');
 
 router.get('/get-info', function(request, response) {
-  restClient.methods.getFromFacebook(function(json, response) {
-    console.log(JSON.parse(json));
-  });
-  restClient.methods.getFromWeather(function(json, response) {
-    console.log(JSON.parse(json));
-  });
-
+  restClient.methods.getFromFacebook(handleJson);
+  restClient.methods.getFromWeather(handleJson);
   response.status(200).json({'status': 'done'});
 });
 
