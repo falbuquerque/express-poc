@@ -1,0 +1,27 @@
+{
+  "name": "express-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falbuquerque/express-poc.git"
+  },
+  "author": "falbuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falbuquerque/express-poc/issues"
+  },
+  "homepage": "https://github.com/falbuquerque/express-poc#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.12.4",
+    "morgan": "^1.5.3",
+    "ms": "^0.7.1",
+    "node-rest-client": "^1.5.1",
+    "xml2js": "^0.4.8"
+  }
+}
